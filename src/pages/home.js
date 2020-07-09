@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 
 import { AuthConsumer } from "../authContext";
 import Login from "../component/Login";
+import PostList from "../component/PostsList";
 
 const HomePage = () => (
   <AuthConsumer>
@@ -13,6 +14,7 @@ const HomePage = () => (
         <>
           <h2>Welcome to React RBCA</h2>
           <Login />
+          <PostList />
         </>
       )
     }

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/home";
 import DashboardPage from "./pages/dashboard";
 import CallbackPage from "./pages/callback";
-import Auth from "./component/Auth";
+import Auth from "./pages/Auth";
 
 const App = () => (
   <div className="App container">
