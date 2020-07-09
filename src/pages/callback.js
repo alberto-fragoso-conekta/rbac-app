@@ -6,7 +6,7 @@ import { AuthConsumer } from "../authContext";
 const Callback = ({ location }) => (
   <AuthConsumer>
     {({ handleAuthentication }) => {
-      if (/access_toke|id_token|error/.test(location.hash)) {
+      if (/access_token|id_token|error/.test(location.hash)) {
         handleAuthentication();
       }
 

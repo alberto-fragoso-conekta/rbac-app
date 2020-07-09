@@ -25,12 +25,10 @@ const PostsList = () => (
                 <td>
                   <Can
                     role={user.role}
-                    perform="posts.edit"
+                    perform="posts:edit"
                     data={{ userId: user.id, postOwnerId: ownerId }}
                     yes={() => (
-                      <button className="btn btn-sm btn.default">
-                        Edit Post
-                      </button>
+                      <button className="btn btn-sm btn-info">Edit Post</button>
                     )}
                   />
                   <Can
